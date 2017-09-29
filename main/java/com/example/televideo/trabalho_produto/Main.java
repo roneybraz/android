@@ -23,14 +23,7 @@ public class Main extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        if(savedInstanceState!=null){
-             listSalve = savedInstanceState.getStringArrayList("lista");
-        }else {
-             listSalve = new ArrayList<String>();
-        }
-
-
-
+     
         Bundle args = getIntent().getExtras();
         final String nomeLista = args.getString("resultado");
 
